@@ -1,4 +1,6 @@
 // debugger
+const resume = document.querySelector('#resume');
+const start = document.querySelector('#start');
 start.addEventListener('click',()=>{
   let questions = [
       {
@@ -211,7 +213,7 @@ start.addEventListener('click',()=>{
       },
     ];
 localStorage.setItem("questionsArray", JSON.stringify(questions));
-window.location.href = '/Quiz-App/game.html';
+window.location.href = 'game.html';
 })
 
 
@@ -223,8 +225,6 @@ let totalCompleted = totalQuestion.every((e)=>{
 });
 
 console.log('Total Qs com ',totalCompleted)
-const resume = document.querySelector('#resume');
-const start = document.querySelector('#start');
 console.log()
 if(totalCompleted==false){
     resume.style.display = 'inline-block';
