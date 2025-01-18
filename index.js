@@ -236,7 +236,7 @@ start.addEventListener('click',()=>{
         },
       ];
   localStorage.setItem("questionsArray", JSON.stringify(questions));
-  window.location.href = 'game.html';
+  window.location.href = '/Quiz-App/game.html';
 })
 
 let highestScore = JSON.parse(localStorage.getItem('highestScore'));
