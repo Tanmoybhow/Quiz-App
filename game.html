@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-main</title>
+    <link rel="stylesheet" href="./game.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="green">
+    <button id="restart">Restart</button>
+    <main>
+      <div class="header">
+        <img src="./img/Group 1.svg" alt="" />
+        <div class="volumeUp " id="volume">
+          <img src="./img/🦆 icon _Volume Up_.svg" alt="" />
+          <img src="./img/🦆 icon _Volume Mute_.svg" alt="">
+        </div>
+      </div>
+      <div class="total" id="total">
+      
+      </div>
+      <div class="question" >
+        <p id="question"></p>
+      </div>
+      <div class="time" id="time">
+        <span class="time_show">
+            00:00
+        </span>
+      </div>
+      <div class="option" id="option">
+        <!-- <div class="select">
+            <p>JS</p>
+        </div>
+        <div class="select">
+            <p>scripting</p>
+        </div>
+        <div class="select ">
+            <p>javascript</p>
+        </div>
+        <div class="select">
+            <p>script</p>
+        </div> -->
+      </div>
+      <div class="next" id="next">
+        <p>Next ></p>
+      </div>
+    </main>
+    <footer>
+        <p>Made with ❤️ by Tanmoy Bhowmik</p>
+    </footer>
+  </body>
+  <audio src="./sound/short-success-sound-glockenspiel-treasure-video-game-6346.mp3" id="rightSound"></audio>
+  <audio src="./sound/buzzer-or-wrong-answer-20582.mp3" id="wrongSound"></audio>
+</html>

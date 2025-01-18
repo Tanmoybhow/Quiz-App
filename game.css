@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+body {
+    padding-bottom: 30px;
+    font-family: "Poppins", serif;
+}
+
+body.green {
+    background-color: #CCE2C2;
+}
+
+body.yellow {
+    background-color: #E4E5C7;
+
+}
+
+body.red {
+    background-color: #DBADAD;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .volumeUp{
+    position: relative;
+    cursor: pointer;
+}
+#volume{
+    cursor: pointer;
+}
+.header .volumeUp img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.header .volumeUp img:first-child{
+    display: block;
+}
+.header .volumeUp img:last-child{
+    display: none;
+}
+.header .volumeMute img:first-child{
+    display: none;
+}
+.header .volumeMute img:last-child{
+    display: block;
+}
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+}
+
+.total_show {
+    /* margin: auto; */
+    background-color: #FEC33D;
+    display: inline-block;
+    font-size: 35.25px;
+    font-weight: 600;
+    padding: 8px 11px;
+    border-radius: 6.66px;
+}
+
+.question {
+    background-color: #F5F5F57A;
+    padding: 37px 33px;
+    border-radius: 6.66px;
+    margin-block: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.question>p {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.question::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F57A;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    border-radius: 6.66px;
+    z-index: -1;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+
+}
+
+.time_show {
+    /* margin: auto; */
+    display: inline-block;
+    font-size: 35.25px;
+    font-weight: 600;
+    padding: 8px 11px;
+    border-radius: 6.66px;
+    color: #fff;
+
+}
+
+.green .time_show {
+    background-color: #02A4096E;
+
+}
+
+.yellow .time_show {
+    background-color: #C5B1006E;
+}
+
+.red .time_show {
+    background-color: #C50C006E;
+}
+
+.option {
+    background-color: #F5F5F57A;
+    padding: 47px 43px;
+    border-radius: 6.66px;
+    margin-block: 20px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.option::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F57A;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    border-radius: 6.66px;
+    z-index: -1;
+
+}
+
+.option .select {
+    width: 100%;
+    border: 3px solid #D9D9D9;
+    border-radius: 8px;
+    padding: 13px 27px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.option .select span{
+    font-size: 10px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+    /* opacity: 0; */
+}
+.option .select span img{
+    margin-left: 4px;
+    width: 20px;
+}
+.option .select.red-border {
+    border-color: #FF7A7A;
+}
+
+.option .select.green-border {
+    border-color: #35BD3A;
+}
+
+.option .select+.select {
+    margin-top: 34px;
+}
+
+.next {
+    text-align: right;
+    color: #01AB08;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.green .next {
+    color: #01AB08;
+}
+
+.yellow .next {
+    color: #C58800;
+}
+
+.red .next {
+    color: #C50000;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 500;
+    color: #858585;
+}
+
+@media (max-width:600px) {
+    main {
+        width: 90%;
+    }
+
+    .total_show {
+        font-size: 25px;
+    }
+
+    .time_show {
+        font-size: 25px;
+    }
+    .option{
+        padding: 25px 24px;
+    }
+
+    .question p {
+        font-size: 20px;
+    }
+
+    .option .select {
+        font-size: 20px;
+    }
+
+    .next {
+        font-size: 20px
+    }
+
+    .option .select+.select {
+        margin-top: 20px;
+    }
+    
+}
