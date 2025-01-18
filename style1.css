@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 a{
     text-decoration-line:none;
 }
 body{
+    max-width: 100%;
     background-color: #F5F5F57A;
     font-family: "Poppins", serif;
     height: 100vh;
+    position: relative;
 }
 main{
     position: absolute;
@@ -63,4 +66,26 @@ footer{
     font-size: 10px;
     font-weight: 500;
     color: #858585;
+}
+
+@media (max-width:600px)
+{
+    
+    body{
+        /* width: 100%; */
+        overflow-x: hidden;
+        height: 100vh;
+        /* border: 1px solid red; */
+        position: relative;
+    }
+    main{
+        top: 50%;
+        overflow-x: hidden;
+    }
+    main img{
+        width: 300px;
+    }
+    button a{
+        font-size: 22px;
+    }
 }
